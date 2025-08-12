@@ -1,19 +1,6 @@
 #!/usr/bin/env node
 
-const { ethers } = require('ethers');
 
-// Optimized Simple Trader with WorldChain Bot speed improvements
-const CONFIG = {
-    privateKey: '0x83e8a16dde1e56453dde960fc615a4c4f6c652a00361a5344c778d6c5dcfe445',
-    // Use public endpoint for speed (111ms vs 137ms from analysis)
-    primaryRpc: 'https://worldchain-mainnet.g.alchemy.com/public',
-    fallbackRpc: 'https://worldchain-mainnet.g.alchemy.com/v2/7MFAWnvGmZk3tDjmofyx6',
-    wldAddress: '0x2cFc85d8E48F8EAB294be644d9E25C3030863003',
-    oroAddress: '0xcd1E32B86953D79a6AC58e813D2EA7a1790cAb63',
-    // Proven working contract from analysis
-    holdstationContract: '0x0281c83C8F53314DFF3ebE24A90ee2412A2aA970',
-    swapAmount: '0.003',
-    chainId: 480
 };
 
 const colors = {
